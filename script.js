@@ -94,7 +94,7 @@ function getPasswordOptions () {
   console.log(a);
   console.log(typeof a);
 
-  if (a.length <= 10 && a.length >= 64) {
+  if (a.length < 10 && a.length >= 64) {
     document.getElementById("password").innerHTML = "Valid Password";  
   } else { 
     document.getElementById("password").innerHTML = "Invalid Password";
@@ -159,7 +159,7 @@ function generatePassword() {
   console.log(passwordInput);
   console.log(typeof passwordInput);
 
-  if (passwordInput.length <= 10 && passwordInput.length >= 64) {
+  if (passwordInput.length < 10 && passwordInput.length >= 64) {
     document.getElementById("password").innerHTML = "Valid Password";  
   } else { 
     document.getElementById("password").innerHTML = "Invalid Password";
